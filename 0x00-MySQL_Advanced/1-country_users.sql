@@ -1,3 +1,3 @@
--- Write a SQL script that  creates a table users
--- With these attributes
-CREATE TABLE IF NOT EXISTS users(id INT PRIMARY_KEY AUTO_INCREMENT 
+-- Write a SQL script that creates a table users
+-- If the table already exists, your script should not fail
+CREATE TABLE IF NOT EXISTS users(id INT NOT NULL AUTO_INCREMENT,PRIMARY KEY(id), email CHAR(255) NOT NULL UNIQUE, name CHAR(255), country ENUM('US', 'CO', 'TU') NOT NULL);
