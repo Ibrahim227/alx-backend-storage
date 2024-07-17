@@ -14,4 +14,4 @@ class Cache:
     def store(data) -> str:
         """return a string"""
         data = random(str(uuid.uuid()))
-        return str(data)
+        return data
